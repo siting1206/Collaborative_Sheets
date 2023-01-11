@@ -14,7 +14,6 @@ public:
     void printVal();
     void setVal(int r, int c, string v);
     void setAccess(string set_access);
-    string getAccess();
 };
 
 string Sheet::getName(){return name;}
@@ -59,10 +58,6 @@ void Sheet::setAccess(string set_access){
     else{access = true;}
 }
 
-string Sheet::getAccess(){
-    if(access == true){return "Editable";}
-    else{return "ReadOnly";}
-}
 
 class User{
 private:
