@@ -75,7 +75,6 @@ public:
     string getName();
     void addSheet(string name);
     Sheet* findSheet(string name);
-    int getCount();
     void shareSheet(Sheet* sheet);
 };
 
@@ -94,9 +93,6 @@ Sheet* User::findSheet(string name){
     return nullptr;
 }
 
-int User::getCount(){
-    return this->count;
-}
 
 void User::shareSheet(Sheet* sheet){
     list[count] = sheet;
@@ -112,7 +108,6 @@ public:
     ~Users();
     void addUser(string name);
     User* findUser(string name);
-    int getCount();
 };
 
 Users::Users(){
@@ -134,7 +129,6 @@ User* Users::findUser(string name){
     return nullptr;
 }
 
-int Users::getCount(){return this->count;}
 
 
 int main()
